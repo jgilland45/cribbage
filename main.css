@@ -1,0 +1,395 @@
+#welcomeScreen {
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+}
+#break {
+    display: inline-block;
+    width: 100px;
+}
+#counterLogo {
+    width: 500px;
+    height: 400px;
+    border-color: purple;
+    border-style:  double;
+    border-width: 5px;
+}
+#gameLogo {
+    width: 500px;
+    height: 400px;
+    border-color: purple;
+    border-style:  double;
+    border-width: 5px;
+}
+h1 {
+    margin-left: auto;
+    margin-right: auto;
+    display: table;
+    color: lightgoldenrodyellow;
+    background-color: blue;
+}
+
+.cardImg {
+    width: 75px;
+    height: 93.75px;
+    border: solid;
+    border-width: 1px;
+}
+div {
+    display: inline;
+}
+#text {
+    display: table;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 40px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    color: black;
+}
+#ok {
+    margin: auto;
+    display: block;
+    margin-bottom: 10px;
+    margin-top: none;
+    display: none;
+}
+#yourCards {
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+}
+.type {
+    margin-right: 5px;
+    margin-left: 5px;
+    display: inline-block;
+    color: black;
+    background: none;
+}
+#cheatLine{
+    display: none;
+    font-size: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: white;
+}
+#goBack {
+    display: none;
+    margin-right: auto;
+    margin-left: auto;
+}
+body{
+    background-image: url("images/newBlue.png");
+    background-repeat: repeat;
+}
+#clickCards {
+    margin-left: 8%;
+    display: table;
+}
+#jasonWin {
+    display: none;
+}
+#autoWin {
+    background: darkgoldenrod;
+    width: 100px;
+    height: 100px;
+}
+#leftcol {
+    display: block;
+	width: 250px;
+	height: 800px;
+	background: #98BD8D;
+    float: left;
+    margin-bottom: none;
+}
+#header {
+    float: right;
+    display: block;
+    width: 1075px;
+	height: 100px;
+	background: #DB974F;
+}
+#foot {
+    margin: auto;
+    display: block;
+	width: 1325px;
+	height: 20px;
+	background: #BC364F;
+	clear: both;
+}
+#wrapper {
+    display: block;
+	width: 1325px;
+	height: 800px;
+	background: #DBB848;
+    margin: 0 auto;
+    margin-bottom: none;
+}
+#stop {
+    background: #DBB848;
+}
+#copy {
+    color: #EDD78A;
+    text-align: center;
+}
+#backHome, #toGame{
+    background-color: #DB974F;
+    width: 535.5px;
+    height: 100px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-width: 5px;
+    border-color: black;
+    outline: none;
+}
+#backHome:hover, #toGame:hover, #toCounter:hover {
+    background-color: #BC364F;
+    color: black;
+    border: 5px solid black;
+}
+#backHome:active, #toGame:active, #toCounter:active {
+    background-color: #DBB848;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+#toCounter {
+    background-color: #DB974F;
+    width: 535.5px;
+    height: 100px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-width: 5px;
+    border-color: black;
+    outline: none;
+    margin: 5px;
+}
+
+#d13 {
+    margin-right: 2.5%;
+}
+#c13 {
+    margin-right: 2.5%;
+}
+#s13 {
+    margin-right: 2.5%;
+}
+#h13 {
+    margin-right: 2.5%;
+}
+#d1 {
+    margin-left: 2.5%;
+}
+#c1 {
+    margin-left: 2.5%;
+}
+#s1 {
+    margin-left: 2.5%;
+}
+#h1 {
+    margin-left: 2.5%;
+}
+.bold {
+    font-weight: bold;
+    margin-left: none;
+}
+#results1 {
+    display: none;
+}
+#results2 {
+    display: none;
+}
+#results3 {
+    display: none;
+}
+#results4 {
+    display: none;
+}
+#results5 {
+    display: none;
+}
+#results6 {
+    display: none;
+}
+#results7 {
+    display: none;
+}
+#results8 {
+    display: none;
+}
+#board {
+    z-index: -1;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.red {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 5.5px;
+}
+#red1 {
+    top: 152px;
+    left: 484px;
+}
+#red2 {
+    top: 152px;
+    left: 528px;
+}
+#menuButtons {
+    display: table;
+    margin: auto;
+    margin-bottom: 0;
+}
+.tab {
+    display: inline-block;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+.tab button:hover {
+    background-color: #ddd;
+}
+.tab button.active {
+    background-color: #ccc;
+}
+.tabcontent {
+    padding: 6px 12px;
+    border: 3px solid #ccc;
+}
+#cribHand{
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+}
+#showCrib{
+    display: none;
+}
+#p1Cards{
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+}
+#p2Cards{
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+}
+#cut {
+    display: none;
+}
+#gameCanvas {
+    position: absolute;
+    top: 400px;
+    left: 0px;
+}
+#board2 {
+    z-index: -1;
+    position: absolute;
+    top: 400px;
+    left: 8px;
+    margin-bottom: 100px;
+}
+#udlrRed{
+    display: block;
+    margin-top: 50px;
+    text-align: center;
+    width: 480px;
+}
+#udlrBlue{
+    display: block;
+    margin-top: 50px;
+    text-align: center;
+    width: 480px;
+}
+.udlrButtonBlue {
+    background-color: blue;
+    color: white;
+    border: none;
+}
+.udlrButtonRed {
+    background-color: red;
+    border: none;
+}
+#cribHandDiv{
+    position: absolute;
+    left:0;
+    top:615px;
+    width: 100%;
+}
+#cutCardDiv{
+    position: absolute;
+    left:10px;
+    top:615px;
+}
+#scoreHand1 {
+    position: absolute;
+    left:10px;
+    top:750px;
+}
+#scoreHand2 {
+    position: absolute;
+    left:125px;
+    top:750px;
+}
+#scoreHand3 {
+    position: absolute;
+    left:240px;
+    top:750px;
+}
+#score2 {
+    position: absolute;
+    left:140px;
+    top:800px;
+}
+.playCards {
+    float: right;
+}
+#pegCountNum {
+  margin: 15px;
+  float: right;
+}
+#sayGoP1 {
+    background-color: green;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+#sayGoP2 {
+    background-color: green;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+#goFastInstructions {
+    padding: none;
+    margin: none;
+    color: black;
+    font-size: larger;
+}

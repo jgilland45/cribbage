@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="shortcut icon" href="images/favicon.jpg">
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Crib Hand Counter</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+
+</head>
+
+<body id='background'>
+    <div id='stop'>
+        <div id='wrapper'>
+            <div id="header">
+                <a href='index.html'><button id='backHome'>Back to home page</button></a>
+                <a href='game.html'><button id='toGame'>Go to two player game</button></a>
+            </div>
+            <div id="leftcol">
+                <!--These show where the points came from, as well as the past scores and the average score-->
+                <p id='results1' class='type'>Nibs: <span id='nibs' class='bold'></span></p><br>
+                <p id='results2' class='type'>Pairs: <span id='pair' class='bold'></span></p><br>
+                <p id='results3' class='type'>Runs: <span id='run' class='bold'></span></p><br>
+                <p id='results4' class='type'>Fifteens: <span id='fifteen' class='bold'></span></p><br>
+                <p id='results5' class='type'>Flush: <span id='flush' class='bold'></span></p><br>
+                <p id='results6' class='type'>Score: <span id='score' class='bold'></span></p><br>
+                <p id='results7' class='type'>Past Scores: <span id='pastScores' class='bold'></span></p><br>
+                <p id='results8' class='type'><span id='average' class='bold'></span></p>
+            </div>
+            <div id='text'>0</div>
+            <button id='ok'>Click me to start again!</button>
+            <div id='yourCards'>
+                <!--These are the cards that you select-->
+                <div><img id='y1' class='cardImg' src='images/questionCard.png'></div>
+                <div><img id='y2' class='cardImg' src='images/questionCard.png'></div>
+                <div><img id='y3' class='cardImg' src='images/questionCard.png'></div>
+                <div><img id='y4' class='cardImg' src='images/questionCard.png'></div>
+                <div><img id='y5' class='cardImg' src='images/questionCard.png'></div>
+            </div>
+            <div id='clickCards'>
+                <!--These are all of the cards that can be selected-->
+                <div id='d1'><img class='cardImg' src='images/aceDiamonds.png'></div>
+                <div id='d2'><img class='cardImg' src='images/twoDiamonds.png'></div>
+                <div id='d3'><img class='cardImg' src='images/threeDiamonds.png'></div>
+                <div id='d4'><img class='cardImg' src='images/fourDiamonds.png'></div>
+                <div id='d5'><img class='cardImg' src='images/fiveDiamonds.png'></div>
+                <div id='d6'><img class='cardImg' src='images/sixDiamonds.png'></div>
+                <div id='d7'><img class='cardImg' src='images/sevenDiamonds.png'></div>
+                <div id='d8'><img class='cardImg' src='images/eightDiamonds.png'></div>
+                <div id='d9'><img class='cardImg' src='images/nineDiamonds.png'></div>
+                <div id='d10'><img class='cardImg' src='images/tenDiamonds.png'></div>
+                <div id='d11'><img class='cardImg' src='images/jackDiamonds.png'></div>
+                <div id='d12'><img class='cardImg' src='images/queenDiamonds.png'></div>
+                <div id='d13'><img class='cardImg' src='images/kingDiamonds.png'></div>
+                <div id='c1'><img class='cardImg' src='images/aceClub.png'></div>
+                <div id='c2'><img class='cardImg' src='images/twoClub.png'></div>
+                <div id='c3'><img class='cardImg' src='images/threeClub.png'></div>
+                <div id='c4'><img class='cardImg' src='images/fourClub.png'></div>
+                <div id='c5'><img class='cardImg' src='images/fiveClub.png'></div>
+                <div id='c6'><img class='cardImg' src='images/sixClub.png'></div>
+                <div id='c7'><img class='cardImg' src='images/sevenClub.png'></div>
+                <div id='c8'><img class='cardImg' src='images/eightClub.png'></div>
+                <div id='c9'><img class='cardImg' src='images/nineClub.png'></div>
+                <div id='c10'><img class='cardImg' src='images/tenClub.png'></div>
+                <div id='c11'><img class='cardImg' src='images/jackClub.png'></div>
+                <div id='c12'><img class='cardImg' src='images/queenClub.png'></div>
+                <div id='c13'><img class='cardImg' src='images/kingClub.png'></div>
+                <div id='h1'><img class='cardImg' src='images/aceHearts.png'></div>
+                <div id='h2'><img class='cardImg' src='images/twoHearts.png'></div>
+                <div id='h3'><img class='cardImg' src='images/threeHearts.png'></div>
+                <div id='h4'><img class='cardImg' src='images/fourHearts.png'></div>
+                <div id='h5'><img class='cardImg' src='images/fiveHearts.png'></div>
+                <div id='h6'><img class='cardImg' src='images/sixHearts.png'></div>
+                <div id='h7'><img class='cardImg' src='images/sevenHearts.png'></div>
+                <div id='h8'><img class='cardImg' src='images/eightHearts.png'></div>
+                <div id='h9'><img class='cardImg' src='images/nineHearts.png'></div>
+                <div id='h10'><img class='cardImg' src='images/tenHearts.png'></div>
+                <div id='h11'><img class='cardImg' src='images/jackHearts.png'></div>
+                <div id='h12'><img class='cardImg' src='images/queenHearts.png'></div>
+                <div id='h13'><img class='cardImg' src='images/kingHearts.png'></div>
+                <div id='s1'><img class='cardImg' src='images/aceSpades.png'></div>
+                <div id='s2'><img class='cardImg' src='images/twoSpades.png'></div>
+                <div id='s3'><img class='cardImg' src='images/threeSpades.png'></div>
+                <div id='s4'><img class='cardImg' src='images/fourSpades.png'></div>
+                <div id='s5'><img class='cardImg' src='images/fiveSpades.png'></div>
+                <div id='s6'><img class='cardImg' src='images/sixSpades.png'></div>
+                <div id='s7'><img class='cardImg' src='images/sevenSpades.png'></div>
+                <div id='s8'><img class='cardImg' src='images/eightSpades.png'></div>
+                <div id='s9'><img class='cardImg' src='images/nineSpades.png'></div>
+                <div id='s10'><img class='cardImg' src='images/tenSpades.png'></div>
+                <div id='s11'><img class='cardImg' src='images/jackSpades.png'></div>
+                <div id='s12'><img class='cardImg' src='images/queenSpades.png'></div>
+                <div id='s13'><img class='cardImg' src='images/kingSpades.png'></div>
+            </div>
+        </div>
+        <div id="foot">
+            <!--This is a joke-->
+            <p id="copy">&copy; Jason Gillanders 2020, All Rights Reserved
+            </p>
+        </div>
+    </div>
+    <!--The place where the 'you cheated' line is created-->
+    <div id='cheatLine'>
+            <p></p>
+        </div>
+        <a href='counter.html'><button id='goBack'>I swear that I will never cheat again. Take me back now.</button></a>
+    <script src='c.js'></script>
+</body>
+
+</html>

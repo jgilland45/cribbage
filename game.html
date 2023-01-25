@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="shortcut icon" href="images/favicon.jpg">
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Two Player Crib Game</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+
+</head>
+
+<body onload="startGame()">
+  <div id='menuButtons'>
+    <!--Navigation between sites-->
+    <a href='index.html'><button id='backHome'>Back to home page</button></a>
+    <a href='counter.html'><button id='toCounter'>Go to crib hand counter</button></a>
+  </div>
+  <!--Taken from a W3Schools tutorial on tabs-->
+  <div class="tab">
+    <button class="tablinks" onclick="openTab(event, 'playerOne')" id='autoOpen'>Player 1's Hand</button>
+    <button class="tablinks" onclick="openTab(event, 'playerTwo')">Player 2's Hand</button>
+  </div>
+
+  <div id="playerOne" class="tabcontent">
+    <!--Player One tab: includes cards, show cards button, 'GO' button-->
+    <p id='p1Instructions'></p>
+    <div><img id='p1c1' class='cardImg' src='images/questionCard.png'></div>
+    <div><img id='p1c2' class='cardImg' src='images/questionCard.png'></div>
+    <div><img id='p1c3' class='cardImg' src='images/questionCard.png'></div>
+    <div><img id='p1c4' class='cardImg' src='images/questionCard.png'></div>
+    <div><img id='p1c5' class='cardImg' src='images/questionCard.png'></div>
+    <div><img id='p1c6' class='cardImg' src='images/questionCard.png'></div>
+    <button id='showCards1'>Click to reveal cards!</button>
+    <button id='sayGoP1'>GO!</button>
+  </div>
+
+  <div id="playerTwo" class="tabcontent">
+    <!--Player Two tab: includes cards, show cards button, 'GO' button-->
+    <p id='p2Instructions'></p>
+    <div><img id='p2c1' class='cardImg' src='images/questionCard.png'></div>
+    <div><img id='p2c2' class='cardImg' src='images/questionCard.png'></div>
+    <div><img id='p2c3' class='cardImg' src='images/questionCard.png'></div>
+    <div><img id='p2c4' class='cardImg' src='images/questionCard.png'></div>
+    <div><img id='p2c5' class='cardImg' src='images/questionCard.png'></div>
+    <div><img id='p2c6' class='cardImg' src='images/questionCard.png'></div>
+    <button id='showCards2'>Click to reveal cards!</button>
+    <button id='sayGoP2'>GO!</button>
+  </div>
+  
+  <div id='uplrRed'>
+    <!--Move the red (player one) pegs left or right-->
+    <button class="udlrButtonRed" onclick="moveLeftRed()">RED LEFT</button>
+    <button class="udlrButtonRed" onclick="moveRightRed()">RED RIGHT</button>
+  </div>
+  <div id='uplrBlue'>
+    <!--Move the blue (player two) pegs left or right-->
+    <button class="udlrButtonBlue" onclick="moveLeftBlue()">BLUE LEFT</button>
+    <button class="udlrButtonBlue" onclick="moveRightBlue()">BLUE RIGHT</button>
+  </div>
+  
+  <div class='playCards'>
+    <!--Where the 'pegging' cards that Player Two played go-->
+    <div><img id='p2p' class='cardImg' src='images/questionCard.png'></div>
+    <p>Player Two</p>
+  </div>
+  <div class='playCards'>
+    <!--Where the 'pegging' cards that Player One played go-->
+    <div><img id='p1p' class='cardImg' src='images/questionCard.png'></div>
+    <p>Player One</p>
+  </div>
+  <!--Shows what 'pegging' number that the players are at-->
+  <p id='pegCountNum'>We're at <span id='pegCountNumSpan'></span></p>
+  
+  <canvas id='gameCanvas'></canvas><img id='board2' src='images/cribBoard.jpg'>
+  <div id='cribHandDiv'>
+    <!--The crib cards-->
+    <div id='cribHand'>
+      <div><img id='p3c1' class='cardImg' src='images/questionCard.png'></div>
+      <div><img id='p3c2' class='cardImg' src='images/questionCard.png'></div>
+      <div><img id='p3c3' class='cardImg' src='images/questionCard.png'></div>
+      <div><img id='p3c4' class='cardImg' src='images/questionCard.png'></div>
+      <button id='showCrib'>Click to reveal crib!</button>
+    </div>
+  </div>
+  <!--Where to get the 'cut' card-->
+  <div id='cutCardDiv'><img id='restOfDeck' class='cardImg' src='images/questionCard.png'>
+  <button id='cut'>Click to get the cut card!</button></div>
+  <button id='scoreHand1' onclick="whichNumberPlayerOne()">Score Hand 1</button>
+  <button id='scoreHand2' onclick="whichNumberPlayerTwo()">Score Hand 2</button>
+  <button id='scoreHand3' onclick="whichNumberCrib()">Score Crib</button>
+  <p id='score2'></p>
+  <!--How to change the score manually-->
+  <span id='goFastInstructions'>Use the input below to change the score. Type in the amount of points you'd like to move,
+    and then click the colour and direction of the pegs you'd like to move.
+  </span>
+  <input type='text' id='goFast'>
+  <button onclick="go()">GO</button>
+  <script src='g.js'></script>
+</body>
+
+</html>
